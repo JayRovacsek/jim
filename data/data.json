@@ -1,0 +1,26 @@
+[
+    {
+        "person": {
+            "id": 1,
+            "name": "Dude"
+        },
+        "sets": [
+            {
+                "exercise": {
+                    "name": "Benchpress",
+                    "max": 3
+                },
+                "weight": 2.7,
+                "reps": 12
+            },
+            {
+                "exercise": {
+                    "name": "Deadlift",
+                    "max": 9000
+                },
+                "weight": 225.7,
+                "reps": 21
+            }
+        ]
+    }
+]
