@@ -91,12 +91,19 @@ impl Component for Home {
                     })
                     .collect::<Vec<Html>>();
                 html! {
-                  <div>
-                    <div> {&workout.person.name}</div>
-                    <ol>
-                    {sets}
-                    </ol>
-                  </div>
+                    <div>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">{&workout.person.name}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {sets}
+                            </tbody>
+                        </table>
+                    </div>
                 }
             })
             .collect();
@@ -113,7 +120,6 @@ impl Component for Home {
               </div>
             }
         } else {
-            println!("Worked?");
             html! {
               <div>
                 <span>{workouts}</span>
